@@ -1,18 +1,18 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://180.100.223.110:8080/eureka/
+      defaultZone: http://180.100.223.110:8010/eureka/
 
 server:
-  port: 8070
+  port: 8030
 
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/hzz-shadow/SpringCloudLearning.git
+          uri: https://github.com/hzz-shadow/SpringCloudLearning
 #          根目录不需要该属性
-#          searchPaths:
+          searchPaths: /**
   application:
     name: config-server

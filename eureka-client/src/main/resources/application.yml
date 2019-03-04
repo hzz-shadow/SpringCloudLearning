@@ -1,10 +1,10 @@
 server:
-    port: 8090
+    port: 8020
 
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://180.100.223.110:8080/eureka/
+            defaultZone: http://180.100.223.110:8010/eureka/
 
 spring:
     application:
