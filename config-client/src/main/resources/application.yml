@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:8070/
+server:
+  port: 8060
+  servlet:
+    context-path: /spring-cloud
