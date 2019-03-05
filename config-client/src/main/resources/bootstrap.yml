@@ -6,8 +6,8 @@ spring:
       label: master
       profile: dev
       uri: http://localhost:8030/
+
 server:
   port: 8040
   servlet:
-#   项目访问映射路径
-    context-path: /spring-cloud
+    context-path: /springCloud
