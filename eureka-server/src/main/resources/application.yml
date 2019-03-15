@@ -9,7 +9,8 @@ eureka:
         registerWithEureka: false
         #表示表示是否从EurekaServer获取注册信息，默认为true。
         fetchRegistry: false
-        aultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+        service-url:
+          defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
 spring:
     application:
         name: eureka-server

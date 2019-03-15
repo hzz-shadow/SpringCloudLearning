@@ -1,0 +1,10 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: ribbon-consumer
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://180.100.223.110:8010/eureka/

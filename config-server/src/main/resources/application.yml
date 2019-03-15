@@ -9,10 +9,13 @@ server:
 spring:
   cloud:
     config:
+      label: master
       server:
         git:
-          uri: https://github.com/hzz-shadow/SpringCloudLearning
-#          根目录不需要该属性
-          searchPaths: /**
+          uri: https://github.com/hzz-shadow/SpringCloudLearning/
+          search-locations: properties
+          username: 1547275544@qq.com
+          password: hzzshadow3429
+
   application:
     name: config-server
