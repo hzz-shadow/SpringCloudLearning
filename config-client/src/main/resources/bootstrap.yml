@@ -1,3 +1,8 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+
 spring:
   application:
     name: config-client
@@ -5,9 +10,12 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8030/
+#      uri: http://localhost:8030
+      discovery:
+        enabled: true
+        service-id: config-server
+      fail-fast: true
+      enabled: true
 
 server:
   port: 8040
-  servlet:
-    context-path: /springCloud

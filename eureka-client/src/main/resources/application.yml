@@ -4,9 +4,9 @@ server:
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://180.100.223.110:8010/eureka/
+            defaultZone: http://localhost:8010/eureka/
 #            多注册中心配置
-#            defaultZone: http://180.100.223.110:8010/eureka/,http://180.100.223.110:7010/eureka/
+#            defaultZone: http://localhost:8010/eureka/,http://localhost:7010/eureka/
 
 spring:
     application:

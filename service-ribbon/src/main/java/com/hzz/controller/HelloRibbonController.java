@@ -1,5 +1,6 @@
 package com.hzz.controller;
 
+import com.hzz.service.HelloRibbonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,13 +12,10 @@ import java.util.Map;
 @RestController
 public class HelloRibbonController {
     @Autowired
-    private RestTemplate restTemplate;
+    private HelloRibbonService helloRibbonService;
 
     @RequestMapping("/ribbon")
     public String hello(){
-        Map<String,String> map = new HashMap<>();
-        map.put("name","ribbon");
-        return restTemplate.postForObject("http://EUREKA-CLIENT/hello",map,String.class);
-//                ("http://EUREKA-CLIENT/hello",String.class,map);
+        return helloRibbonService.getHelloContent();
     }
 }

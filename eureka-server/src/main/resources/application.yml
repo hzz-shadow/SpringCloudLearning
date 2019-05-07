@@ -1,16 +1,3 @@
-server:
-    port: 8010
-
-eureka:
-    instance:
-        hostname: 180.100.223.110
-    client:
-        #表示是否将自己注册在EurekaServer上，默认为true。
-        registerWithEureka: false
-        #表示表示是否从EurekaServer获取注册信息，默认为true。
-        fetchRegistry: false
-        service-url:
-          defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
 spring:
-    application:
-        name: eureka-server
+  profiles:
+    active: dev

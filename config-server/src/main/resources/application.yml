@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://180.100.223.110:8010/eureka/
+      defaultZone: http://localhost:8010/eureka/
 
 server:
   port: 8030
@@ -12,9 +12,9 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/hzz-shadow/SpringCloudLearning/
-          search-locations: properties
-          username: 1547275544@qq.com
+          uri: https://github.com/hzz-shadow/SpringCloudLearning
+          search-paths: config-properties
+          username: hzz-shadow
           password: hzzshadow3429
 
   application:
